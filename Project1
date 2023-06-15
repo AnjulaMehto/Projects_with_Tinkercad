@@ -1,1 +1,38 @@
-
+/* 
+  This program blinks LED connection to the pin number 13, 8, and 4 
+*/  
+int red = 13;
+int green =8;
+int orange = 4;
+void setup()  
+{  
+  pinMode(red, OUTPUT);  
+  pinMode(green, OUTPUT);  
+  pinMode(orange, OUTPUT);  
+}  
+void loop()  
+{  
+ // the first LED is made to blink one time  
+  digitalWrite(red, HIGH);  
+  delay(1000); // delay time in milliseconds  
+  digitalWrite(red, LOW);  
+  delay(1000);  
+  // the second LED will blink two times  
+  digitalWrite(green,  HIGH);  
+  delay(500); // the duration is 0.5 seconds  
+  digitalWrite(green, LOW);  
+  delay(500);  
+  digitalWrite(green, HIGH);  
+  delay(500);   
+  digitalWrite(green, LOW);  
+  delay(500);  
+   // the third LED will blink three times  
+  for( int i = 0; i < 3; i = i +1 )  
+  {  
+  digitalWrite(orange, HIGH);  
+  delay(500);   
+  digitalWrite(orange, LOW);  
+  delay(500);  
+    // Adjust the delay time accordingly  
+  }  
+}  
