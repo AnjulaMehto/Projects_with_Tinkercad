@@ -1,14 +1,14 @@
 /* 
-  This program blinks LED connection to the pin number 13, 8, and 4 
+  This program blinks LED connection to the pin number 13, 12, and 11 
 */  
 int red = 13;
-int green =8;
-int orange = 4;
+int green =12;
+int org = 11;
 void setup()  
 {  
   pinMode(red, OUTPUT);  
   pinMode(green, OUTPUT);  
-  pinMode(orange, OUTPUT);  
+  pinMode(org, OUTPUT);  
 }  
 void loop()  
 {  
@@ -29,9 +29,9 @@ void loop()
    // the third LED will blink three times  
   for( int i = 0; i < 3; i = i +1 )  
   {  
-  digitalWrite(orange, HIGH);  
+  digitalWrite(org, HIGH);  
   delay(500);   
-  digitalWrite(orange, LOW);  
+  digitalWrite(org, LOW);  
   delay(500);  
     // Adjust the delay time accordingly  
   }  
